@@ -1,0 +1,23 @@
+
+public class PetMaster {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pet myPet = new Pet();
+		String petTalk;
+		myPet.eat();
+		petTalk = myPet.say(" Do you know da wae?");
+		System.out.println(petTalk);
+		myPet.sleep();
+		
+		Banana myBanana = new Banana();
+		myBanana.eat();
+		myBanana.dive(9001);
+		myBanana.dive();
+		String bananaTalk;
+		bananaTalk = myBanana.say(" You have to have ebola to know da wae");
+		System.out.println(bananaTalk);
+		myBanana.sleep();
+	}
+
+}

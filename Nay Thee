@@ -1,0 +1,55 @@
+
+public class Banana extends Pet{
+	int currentDepth;
+	final int DEFAULT_DIVING = 5;
+	
+	
+	public void dive(int howDeep) {
+		currentDepth += howDeep;
+		if (currentDepth > 10000) {
+			System.out.println("I'm a bananananananana, i cannot go below 10000 banana levels boi");
+			currentDepth -= howDeep;
+		}
+		else {
+			System.out.println("I am flying "+howDeep+" miles.");
+			System.out.println("I am at "+currentDepth+" miles above banana lvl.");
+		}
+	}
+	public void dive() {
+			currentDepth += DEFAULT_DIVING;
+			if (currentDepth > 10000) {
+				System.out.println("I'm a bananananananana, i cannot go below 10000 banana levels boi");
+				currentDepth -= DEFAULT_DIVING;
+			}
+			else {
+				System.out.println("I am flying "+DEFAULT_DIVING+" miles.");
+				System.out.println("I am at "+currentDepth+" miles above banana lvl.");
+			}
+	}
+	Banana (int starting_position){
+		currentDepth = starting_position;
+	}
+	 Banana(){
+		int starting_position = 69;
+		currentDepth = starting_position;
+	}
+
+
+	
+	
+public String say(String aWord) {
+	String  petTalk  = "Im a banana,"+aWord;
+	return petTalk;
+}
+	public Banana (float w, String c){
+	color = c;
+	weight = w;
+	
+}
+	public float getWeight() {
+	return weight;
+}
+	public String getColor() {
+		return color;
+	}
+}

@@ -1,0 +1,18 @@
+
+public class Pet {
+	int age;
+	float weight;
+	float height;
+	String color;
+	
+	public void eat() {
+		System.out.println("Oi oi im hungry AF imma eat u lol");
+	}
+	public void sleep() {
+		System.out.println("Executed.");
+	}
+	public String say(String aWord) {
+		String  petTalk  = "Something"+aWord;
+		return petTalk;
+	}
+}
